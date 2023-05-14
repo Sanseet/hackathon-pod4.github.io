@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebWiz</title>
+    <link rel="stylesheet" href="login.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://kit.fontawesome.com/b16c96748f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="logos"><a href="#" class="logo">Webwiz</a></div>
+        <nav id="navbar">
+            <a href="index.html" class="navlist active">Home</a>
+            <a href="about.html" class="navlist">About</a>
+            <a href="team.html" class="navlist">Teams</a>
+            <a href="event.html" class="navlist">Events</a>
+        </nav>
+        <div class="l-profile">
+            <div class="toggle-btn"><i class="fa-solid fa-bars"></i></div>
+            <a href="login.html"><img src="https://img.icons8.com/?size=512&id=23242&format=png"
+                    id="login" alt="login" height="40rem"></a></div>
+        <div class="dropdown open">
+            <a href="index.html" class="navlist active">Home</a>
+            <a href="about.html" class="navlist">About</a>
+            <a href="team.html" class="navlist">Teams</a>
+            <a href="event.html" class="navlist">Events</a>
+            <a href="#" class="navlist">login</a>
+        </div>
+    </header>
+        <section>
+            <div class="form-box">
+                <div class="form-value">
+                    <form action="">
+                        <h2>Register</h2>
+                        <div class="inputbox">
+                            <input type="text" id="name" required>
+                            <label for="">Name</label>
+                        </div>
+                        <div class="inputbox">
+                            <ion-icon name="mail-outline"></ion-icon>
+                            <input type="email" id="email" required>
+                            <label for="">Email</label>
+                        </div>
+                        <div class="inputbox">
+                            <ion-icon name="lock-closed-outline"></ion-icon>
+                            <input type="password" id="password" required>
+                            <label for="">Password</label>
+                        </div>
+                        <button onclick="register()">Register</button>
+                        <div class="register">
+                            <p>Already have an Account ? <br><a href="#" class="Reg">Log-In</a></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="last">
+                <h4 class="heading4">Connect with us</h4>
+                <div class="handels">
+                    <li><a
+                            href="https://in.linkedin.com/company/webwiz-nitr?original_referer=https%3A%2F%2Fwww.google.com%2F"><i
+                                class="fa-brands fa-linkedin fa-2xl" style="color: #ffffff;"></i></li>
+                    <li><a href="https://github.com/Webwiznitr"><i class="fa-brands fa-github fa-2xl"
+                                style="color: #ffffff;"></i></li>
+                    <li><a href="https://twitter.com/webwiznitr"><i class="fa-brands fa-twitter fa-2xl"
+                                style="color: #ffffff;"></i></li>
+                    <li><a href="https://www.instagram.com/webwiz.nitr/?hl=en"><i class="fa-brands fa-instagram fa-2xl"
+                                style="color: #ffffff;"></i></li>
+                    <li><a href="https://www.facebook.com/webwiz.nitr/"><i class="fa-brands fa-facebook fa-2xl"
+                                style="color: #ffffff;"></i></a></li>
+
+                </div>
+                <div class="cr">Webwiz &copy; 2023 All rights reserved.</div>
+            </div>
+        </footer>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+        <script src="https://www.gstatic.com/firebasejs/9.21.0/firebase-app.js"></script>;
+        <script src="https://www.gstatic.com/firebasejs/9.21.0/firebase-auth.js"></script>;
+        <script src="https://www.gstatic.com/firebasejs/9.21.0/firebase-database.js"></script>;
+        <script src="index.js"></script>
+        <script src="z.js"></script>
+    </body>
+
+    </html>

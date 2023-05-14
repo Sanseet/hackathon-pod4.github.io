@@ -1,0 +1,326 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@1,900&family=Poppins:wght@500&family=Work+Sans:wght@300&display=swap');
+* {
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    transition: .2s linear;
+}
+
+header {
+    display: flex;
+    /* justify-content: space-between; */
+    background: transparent;
+    /* padding: 2rem 4%; */
+    /* position: fixed; */
+    width: 95%;
+    margin: auto;
+    padding-top: 10px;
+    height: 50px;
+    margin-top: 1.3em;
+}
+
+.logos {
+    width: 30%;
+
+}
+
+.logo {
+    display: flex;
+    text-shadow: 1px 1px 2px rgb(183, 0, 255);
+    font-size: 1.9rem;
+    font-weight: 700;
+    color: rgba(166, 39, 216, 0.87);
+
+    /* justify-content: flex-end; */
+
+
+    justify-content: flex-start;
+}
+
+nav {
+    display: flex;
+    margin-top: .6rem;
+    /* margin-left: 20rem; */
+    font-weight: 500;
+    justify-content: center;
+    gap: 40px;
+    width: 50%;
+}
+header .toggle-btn{
+    
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: none;
+}
+.dropdown{
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    width: 300px;
+    background-color: rgb(144, 0, 255),0.1;
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    height: 0;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.dropdown.open{
+    height: 240px;
+}
+.dropdown >a{
+    padding: 0.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media(max-width:600px){
+    #navbar,.l-profile >a{
+        display: none;
+    }
+    header{
+        justify-content: space-between;
+    }
+    .l-profile .toggle-btn{
+        display: block;
+    }
+    .dropdown{
+        display: block;
+    }
+}
+@media(max-width:350px){
+    .dropdown{
+        left: 2rem;
+        width: unset;
+    }
+}
+.l-profile {
+    display: flex;
+    width: 20%;
+    justify-content: flex-end;
+}
+
+.navlist {
+    color: rgb(0, 0, 0);
+    font-size: 1.1rem;
+}
+
+#login {
+    cursor: pointer;
+    
+}
+
+#login {
+    border: .2rem solid rgba(190, 16, 190, .8);
+    border-radius: 50%;
+    /* transition: .3s; */
+}
+
+
+
+.navbar a {
+    position: relative;
+}
+
+.navlist.active,
+.navlist:hover {
+    color: rgb(183, 0, 255);
+    transition: .5s;
+    text-shadow: 1px 2px 5px rgb(144, 0, 255);
+    text-decoration: underline rgb(162, 62, 239);
+
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 79vh;
+    width: 100%;
+    
+    background:white;
+    background-position: center;
+    background-size: cover;
+}
+.form-box{
+    background:rgb(162, 62, 239);
+    position: relative;
+    width: 400px;
+    height: 450px;
+    border: 2px solid rgba(255,255,255,0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+h2{
+    font-size: 2em;
+    color: #fff;
+    text-align: center;
+}
+.inputbox{
+    position: relative;
+    margin: 30px 0;
+    width: 310px;
+    border-bottom: 2px solid #fff;
+}
+.inputbox label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 1em;
+    pointer-events: none;
+    transition: .5s;
+}
+input:focus ~ label,
+input:valid ~ label{
+top: -5px;
+}
+.inputbox input {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding:0 35px 0 5px;
+    color: #fff;
+}
+.inputbox ion-icon{
+    position: absolute;
+    right: 8px;
+    color: #fff;
+    font-size: 1.2em;
+    top: 20px;
+}
+.forget{
+    margin: -15px 0 15px ;
+    font-size: .9em;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;  
+}
+
+.forget label input{
+    margin-right: 3px;
+    
+}
+.forget label a{
+    color: #fff;
+    text-decoration: none;
+}
+.forget label a:hover{
+    text-decoration: underline;
+    color: grey;
+}
+button{
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    background: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+}
+.reg{
+    margin-top: 10px;
+    font-size: .9em;
+    color: #fff;
+    text-align: center;
+}
+.Reg{
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: 600;
+}
+.Reg:hover{
+    text-decoration: underline;
+    color:grey;
+}
+
+footer {
+    background-color: rgb(162, 62, 239);
+    height: 100px;
+    align-items: center;
+    width: 100%;
+}
+
+footer .handels {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    width: 50%;
+    overflow: hidden;
+}
+
+.heading4 {
+    color: white;
+    margin-left: 10.5em;
+    padding-top: 20px;
+
+}
+
+.last {
+    background-color: rgb(162, 62, 239);
+    margin-top: 20px;
+    padding-left: 33%;
+}
+
+footer .cr {
+    margin-top: 20px;
+    width: 50%;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.handels>li {
+    padding: 18px;
+}
+
+@media (max-width:1000px) {
+    .pod-member {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
+
+@media (max-width:700px) {
+    .pod-member {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width:400px) {
+    .pod-member {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.type {
+    color:#0000;
+    background:
+      linear-gradient(-90deg,#00DFFC 5px,#0000 0) 10px 0,
+      linear-gradient(#00DFFC 0 0) 0 0;
+    background-size:calc(var(--n)*1ch) 200%;
+    -webkit-background-clip:padding-box,text;
+    background-clip:padding-box,text;
+    background-repeat:no-repeat;
+    animation: 
+     b .1s infinite steps(1),   
+     t calc(var(--n)*.1s) steps(var(--n)) forwards;
+  }
+  
+  @keyframes t{
+    from {background-size:0 200%}
+  }
+  @keyframes b{
+    50% {background-position:0 -100%,0 0}
+  }
